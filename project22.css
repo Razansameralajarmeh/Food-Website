@@ -1,0 +1,532 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 39px;
+    background: linear-gradient(90deg, #ffe4b6 79%, #fbc24b 21%)
+}
+
+.logo {
+    width: 30px;
+}
+
+.logo>img {
+    filter: drop-shadow(0 0 1px black);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-left,
+.nav-right,
+.nav-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p.nav-title {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0px 10px;
+}
+
+ul {
+    display: flex;
+    margin: 0 12px;
+}
+
+ul li {
+    list-style-type: none;
+    margin: -1px 31px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+li:hover {
+    cursor: pointer;
+    color: #fbc24b;
+}
+
+.menu2,
+hum-burger {
+    display: none;
+}
+
+
+input[type="search"] {
+    width: 190px;
+    height: 29px;
+    border-radius: 7px;
+    outline: none;
+    padding-left: 12px;
+    margin: 0px 12px;
+    border: 1px solid white;
+}
+
+input::placeholder {
+    color: black
+}
+
+
+.app-btn {
+    color: white;
+    margin: 0 12px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: #110745;
+    border: none;
+}
+
+i {
+    color: white;
+}
+
+
+/* home-section style */
+
+.home-section {
+    background: linear-gradient(90deg, #ffe4b6 79%, #fbc24b 21%);
+    padding: 23px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.home-left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 84vh;
+}
+
+img.omelate {
+    position: absolute;
+    top: 125px;
+    right: 289px;
+    width: 37%;
+    height: auto;
+}
+
+img.pulses {
+    position: absolute;
+    top: 125px;
+    right: 262px;
+    width: 8%;
+    height: auto;
+}
+
+img.aloo-palak {
+    position: absolute;
+    top: 61px;
+    right: 353px;
+    width: 9%;
+    height: auto;
+}
+
+img.spoon {
+    position: absolute;
+    top: 48px;
+    right: 488px;
+    width: 14%;
+    height: auto;
+    transform: rotate(279deg);
+}
+
+img.knife {
+    position: absolute;
+    top: 48px;
+    right: 587px;
+    width: 15%;
+    height: auto;
+    transform: rotate(211deg);
+}
+
+img.pudina-chutney {
+    position: absolute;
+    top: 375px;
+    right: 235px;
+    width: 15%;
+    height: auto;
+}
+
+.home-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 84vh;
+}
+
+.home-right>p {
+    color: white;
+    font-size: 11px;
+    margin: 25px -12px;
+}
+
+.home-right>p>i {
+    color: #fbc24b;
+    margin-right: 12px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+
+
+h2 {
+    font-size: 39px;
+    width: 52%;
+    margin-left: 66px;
+}
+
+
+.know-more {
+    margin: 14px 69px;
+}
+
+.home-left>p {
+    margin-left: 66px;
+    color: #fbc24b;
+}
+
+
+/* food menu design */
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item-name {
+    padding: 23px 30px;
+    width: 15%;
+}
+
+.input-contain {
+    width: 160px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    position: absolute;
+    width: 173px;
+    height: 41px;
+}
+
+
+input[type="checkbox"]:checked+.checkbox-tile {
+    background-color: #fbc24b;
+    color: white;
+}
+
+.checkbox-tile {
+    padding: 12px;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    background-color: #e9e9e9a8;
+    margin: 12px 0;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.food-card>img {
+    height: 244px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.food-card {
+    margin: 12px;
+    position: relative;
+    height: 309px;
+    width: 285px;
+}
+
+.food-card-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    padding: 23px;
+    top: 0px;
+    border-radius: 10px;
+    color: white;
+    left: 0px;
+    background-color: #110745;
+    margin: 167px 20px;
+}
+
+.food-card-details>p {
+    text-align: center;
+    color: #aea9a9;
+    padding: 2px;
+}
+
+.hum-burger {
+    display: none;
+    padding: 2px;
+    background-color: #fbc24b;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 26px;
+    height: 2px;
+    background-color: white;
+    margin: 2px;
+    transition: all 0.5s ease-in-out;
+}
+
+.add-line1 {
+    width: 15px;
+    margin-left: 14px;
+}
+
+.add-line2 {
+    width: 15px;
+    margin-left: 9px;
+}
+
+.add-line3 {
+    width: 15px;
+    margin-left: 3px;
+}
+
+.menu2 {
+    display: flex;
+    background-color: #ffe4b6;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    transition: height 1s ease-in-out;
+}
+
+.menu2.add-active-menu {
+    height: 222px;
+}
+
+.menu2>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu2>ul>li {
+    padding: 8px 23px;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .hum-burger {
+        display: flex;
+        background: linear-gradient(90deg, #ffe4b6 79%, #fbc24b 21%);
+    }
+
+    .menu2 {
+        background: linear-gradient(90deg, #ffe4b6 79%, #fbc24b 21%);
+    }
+
+    .nav-middle {
+        display: none;
+    }
+
+    img.omelate {
+        width: 25%;
+    }
+
+    img.knife {
+        top: 72px;
+        right: 505px;
+        width: 9%;
+    }
+
+    img.pudina-chutney {
+        top: 294px;
+        right: 256px;
+        width: 9%;
+    }
+
+    img.pulses {
+        width: 6%;
+    }
+
+    img.spoon {
+        top: 100px;
+        right: 488px;
+        width: 6%;
+    }
+}
+
+@media only screen and (max-width: 1088px) {
+
+    nav,
+    .home-section,
+    .hum-burger,
+    .menu2 {
+        background: linear-gradient(90deg, #ffe4b6 77%, #fbc24b 21%);
+    }
+}
+
+@media only screen and (max-width: 858px) {
+    nav {
+        padding: 14px 7px;
+    }
+    img.spoon, img.knife{
+        display:none;
+    }
+
+    img.omelate{
+        right: 243px;
+    }
+
+    img.pulses{
+        right:226px;
+    }
+
+    img.pudina-chutney{
+        top: 250px;
+        right: 224px;
+    }
+
+    img.aloo-palak{
+        top:76px;
+    }
+}
+
+@media only screen and (max-width: 799px){
+    .home-section>img{
+        display: none;
+    }
+
+    .menu2,
+    nav{
+        background:#ffe4b6;
+    }
+
+    .hum-burger{
+        background: #fbc24b;
+    }
+
+    .home-section{
+        background: linear-gradient(180deg, #ffe4b6 62%, #fbc24b 21%);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:18px 0;
+    }
+
+    .home-left{
+        padding:54px 0;
+        align-items: center;
+    }
+
+    .home-right{
+        flex-direction:row;
+        margin-top: 80px;
+    }
+
+    .home-right>p{
+        margin:12px;
+    }
+
+    h2{
+        width: 80%;
+        margin:12px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    form{
+        display: none;
+    }
+
+    .app-btn{
+        margin: 7px 12px;
+        padding:16px 20px;
+    }
+
+    .home-left>p{
+        margin-left:0px;
+    }
+
+}
+
+
+@media only screen and (max-width: 594px){
+     .app-btn{
+        padding: 12px;
+     }
+
+     .home-section{
+        height: 112vh;
+     }
+
+     .home-right{
+        flex-direction: column;
+        padding:23px;
+        margin-top: 43px;
+     }
+     .menu{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .menu-item-name{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .checkbox-tile{
+        margin:5px;
+     }
+
+     h3{
+        margin: 6px;
+        font-size: 16px;
+     }
+
+     .food-card{
+        height: 309px;
+        width: 245px;
+     }
+
+     .food-card-details{
+        top: 144px;
+        height:94px;
+        margin: 12px;
+     }
+
+     .menu-item-name{
+        width:80%;
+     }
+}
